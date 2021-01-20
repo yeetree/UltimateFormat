@@ -2,8 +2,21 @@
   <head>
     <title>UltimateFormat Encoder/Decoder</title>
     <script src="./ultimateformat.js"></script>
+	<script>
+	  function clickE() {
+	    document.getElementById("output").value = Encode(document.getElementById("input").value);
+	  }
+	  function clickD() {
+	    document.getElementById("output").value = Decode(document.getElementById("input").value);
+	  }
+	</script>
   </head>
   <body>
-    <p>Sorry, we are not yet ready. Come back later!</p>
+    <h1>UltimateFormat Encoder/Decoder<h1>
+	<h2>Convert text to B64 to ROT13 to Binary to B64 to ROT13 to Binary</h2>
+	<input id="input">
+	<input id="output">
+	<button onclick="clickE()">Encode</button>
+	<button onclick="clickD()">Decode</button>
   </body>
 </html>
